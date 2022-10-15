@@ -1,0 +1,4 @@
+#!/bin/sh
+
+grim -g "$(slurp)" $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s.png')
+dunstify "Screenshot taken!"

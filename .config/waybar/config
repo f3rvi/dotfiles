@@ -1,0 +1,92 @@
+{
+	"layer": "top",
+	"modules-left": ["custom/launcher", "wlr/workspaces", "custom/spotify"],
+	"modules-center": ["clock"],
+	"modules-right": ["hyprland/language", "pulseaudio", "backlight", "battery", "custom/powermenu"],
+
+	"custom/launcher": {
+		"format": " ",
+		"on-click": "rofi -show drun",
+		"on-click-right": "killall rofi"
+	},
+
+	"wlr/workspaces": {
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+			"active": "󰮯",
+			"default": ""
+		}
+	},
+
+	"custom/spotify": {
+    		"format": " {}  ",
+    		"escape": true,
+    		"return-type": "json",
+    		"max-length": 40,
+    		// "interval": 30,
+    		"on-click-backward": "playerctl -p spotify previous",
+    		"on-click-forward": "playerctl -p spotify next",
+		"on-click-middle": "playerctl -p spotify play-pause",
+    		"exec": "$HOME/.config/waybar/scripts/spotify.py 2> /dev/null",
+		"exec-if": "pgrep spotify"
+	},
+
+	"clock": {
+    		"interval": 60,
+    		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    		"format": " {:%I:%M %p} "
+	},
+
+	"custom/powermenu": {
+		"format": " ",
+		"on-click": "poweroff"
+	},
+
+	"battery": {
+    		"interval": 60,
+    		"states": {
+        		"warning": 30,
+        		"critical": 15
+    		},
+    		"format": "<span font=\"Font Awesome 6 Free\">{icon}</span> {capacity}%",
+    		"format-icons": ["", "", "", "", ""],
+    		"max-length": 25
+	},
+
+	"backlight": {
+    		"device": "radeon_bl0",
+		"on-scroll-up": "brightnessctl -q s 1%+",
+		"on-scroll-down": "brightnessctl -q s 1%-",
+		"on-click": "brightnessctl -q s 5%",
+		"on-click-middle": "brightnessctl -q s 50%",
+		"on-click-right": "brightnessctl -q s 100%",
+    		"format": "<span font=\"Font Awesome 6 Free 10\">{icon}</span>  {percent}%",
+    		"format-icons": ["", ""]
+	},
+
+	"pulseaudio": {
+    		"format": "<span font=\"Font Awesome 6 Free 10\">{icon}</span>  {volume}%",
+		"format-muted": "<span font=\"Font Awesome 6 Free 10\"></span> N/A%",
+    		"format-icons": {
+        		"headphone": "",
+        		"hands-free": "",
+        		"headset": "",
+       			"phone": "",
+        		"portable": "",
+        		"car": "",
+        		"default": ["", ""]
+    		},
+    		"scroll-step": 1,
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    		"on-click-middle": "pavucontrol",
+	},
+
+	"hyprland/language": {
+		"format": "<span font=\"Font Awesome 6 Free 9\">  </span> {}",
+		"keyboard-name": "AT Translated Set 2 keyboard",
+		"format-en": "us",
+		"format-ru": "ru",
+	},
+}
