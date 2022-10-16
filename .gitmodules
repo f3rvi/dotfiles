@@ -1,3 +1,6 @@
 [submodule ".local/share/themes/Nordic"]
 	path = .local/share/themes/Nordic
 	url = https://github.com/EliverLara/Nordic.git
+[submodule ".local/share/icons/Nordzy-cursors"]
+	path = .local/share/icons/Nordzy-cursors
+	url = https://github.com/alvatip/Nordzy-cursors.git
