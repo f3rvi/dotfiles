@@ -28,9 +28,9 @@ paru -S hyprland alacritty waybar-hyprland-git neovim rofi-lbonn-wayland-git cav
 <details>
 <summary><b>2. Dotfiles</b></summary>
 
-Clone into the repo, copy all files and folders into your ``$HOME``.
+Clone into this branch recursively, copy all files and folders into your ``$HOME``.
 ```
-git clone --branch winter https://github.com/f3rvi/dotfiles.git
+git clone --branch winter --recursive https://github.com/f3rvi/dotfiles.git
 cp -r dotfiles/. $HOME
 ```
 </details>
