@@ -2,7 +2,7 @@
 
 ## ℹ️ General information
 > Dots in winter style (e.g. with beautiful Nord theme) made on Hyprland.
-- **STATUS**: **WIP**
+- **STATUS**: **DEPRECATED**, means outdated and no longer supported by me. See newer branch.
 - **Compositor**: **[Hyprland](https://github.com/hyprwm/Hyprland/)** (wayland)
 - **GTK Theme**: **[Nordic](https://github.com/EliverLara/Nordic/)** based on **[Nord colorscheme](https://www.nordtheme.com/)**
 - **Terminal**: **[alacritty](https://alacritty.org/)** with **[fish](https://fishshell.com/)** shell
