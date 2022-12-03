@@ -1,2 +1,2 @@
-# dotfiles
-Backup files of my GNU/Linux setups
+# Dots in Winter style
+Status: Very, very WIP atm
