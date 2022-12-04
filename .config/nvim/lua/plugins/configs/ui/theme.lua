@@ -23,8 +23,8 @@ end
 -- CMP
 vim.cmd [[
 
-  hi PmenuSel guibg=#3B4252 guifg=NONE
-  hi Pmenu guibg=#2A303C
+  hi CmpPmenuSel guibg=#343A46 guifg=NONE
+  hi CmpPmenu guibg=#2A303C
   hi CmpDocBorder guifg=#4B515D
   hi CmpItemAbbrDeprecated guifg=#646A76 guibg=NONE gui=strikethrough
   hi CmpItemAbbr guifg=#ABB2BF guibg=NONE
