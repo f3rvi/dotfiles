@@ -17,7 +17,7 @@ M.close_buffer = function()
   else
     vim.cmd("bnext")
   end
-  vim.cmd("bdelete " .. cbn)
+  vim.cmd("bdelete! " .. cbn)
 end
 
 return M

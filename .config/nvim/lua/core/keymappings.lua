@@ -1,13 +1,12 @@
 local map = vim.api.nvim_set_keymap
 
 -- Tree
-map("n", "<C-t>", "<CMD>NvimTreeToggle<CR>", {})
-map("n", "<A-t>", "<CMD>NvimTreeFocus<CR>", {})
+map("n", "<F49>", "<CMD>NvimTreeToggle<CR>", {})
+map("n", "<A-Tab>", "<CMD>wincmd w<CR>", {})
 
 -- Bufferline
 map("n", "<A-Right>", "<CMD>BufferLineCycleNext<CR>", {})
 map("n", "<A-Left>", "<CMD>BufferLineCyclePrev<CR>", {})
-map("n", "<A-Tab>", "<CMD>BufferLineCycleNext<CR>", {})
 map("n", "<A-1>", "<CMD>lua require(\"bufferline\").go_to_buffer(1, true)<CR>", {})
 map("n", "<A-2>", "<CMD>lua require(\"bufferline\").go_to_buffer(2, true)<CR>", {})
 map("n", "<A-3>", "<CMD>lua require(\"bufferline\").go_to_buffer(3, true)<CR>", {})

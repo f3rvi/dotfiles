@@ -30,6 +30,8 @@ return require('packer').startup(function(use)
   end,
   }
 
+  use { 'nvim-lua/plenary.nvim', module = "plenary" }
+
   use {
     'nvim-lualine/lualine.nvim',
     config = function()

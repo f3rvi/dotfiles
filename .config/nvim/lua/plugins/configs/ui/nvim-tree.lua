@@ -4,89 +4,137 @@ if not present then
 end
 
 local options = {
-  filters = {
-    dotfiles = false,
+  ignore_ft_on_setup = { "alpha" },
+  auto_reload_on_write = false,
+  hijack_directories = {
+    enable = false,
   },
   disable_netrw = true,
   hijack_netrw = true,
-  open_on_setup = false,
-  ignore_ft_on_setup = { "alpha" },
   hijack_cursor = true,
   hijack_unnamed_buffer_when_opening = false,
   update_cwd = true,
   update_focused_file = {
     enable = true,
-    update_cwd = true,
+    update_cwd = false,
+    ignore_list = {},
   },
-  view = {
-    adaptive_size = true,
-    side = "left",
-    width = 20,
-    hide_root_folder = true,
+  system_open = {
+    cmd = nil,
+    args = {},
   },
   git = {
-    enable = false,
-    ignore = true,
+    enable = true,
+    ignore = false,
+    timeout = 200,
   },
   filesystem_watchers = {
     enable = true,
   },
-  actions = {
-    open_file = {
-      resize_window = true,
+  view = {
+    width = 20,
+    hide_root_folder = false,
+    side = "left",
+    mappings = {
+      custom_only = false,
+      list = {
+        { key = { "<C-]>", "a", "d", "D" }, action = "" },
+        { key = "<A-Down>",                 action = "cd" },
+        { key = "<A-Up>",                   action = "dir_up" },
+        { key = { "+", "=" },               action = "create" },
+        { key = "_",                        action = "remove" },
+        { key = "-",                        action = "trash" },
+      },
     },
+    number = false,
+    relativenumber = false,
+    adaptive_size = true,
+    signcolumn = "yes",
   },
   renderer = {
-    highlight_git = false,
-    highlight_opened_files = "none",
-
     indent_markers = {
       enable = true,
-      inline_arrows = true,
-        icons = {
-          corner = "└",
-          edge = "│",
-          item = "│",
-          bottom = "─",
-          none = " ",
-        },
-    },
-
-    icons = {
-      show = {
-        file = true,
-        folder = true,
-        folder_arrow = false,
-        git = false,
+      icons = {
+        corner = "╰",
+        edge = "│",
+        item = "│",
+        none = " ",
       },
-
+    },
+    icons = {
+      webdev_colors = true,
+      show = {
+        git = true,
+        folder = true,
+        file = true,
+        folder_arrow = false,
+      },
       glyphs = {
-        default = "",
+        default = "",
         symlink = "",
-        folder = {
-          default = "",
-          empty = "",
-          empty_open = "",
-          open = "",
-          symlink = "",
-          symlink_open = "",
-          arrow_open = "",
-          arrow_closed = "",
-        },
         git = {
-          unstaged = "✗",
-          staged = "✓",
-          unmerged = "",
-          renamed = "➜",
-          untracked = "★",
           deleted = "",
           ignored = "◌",
+          renamed = "➜",
+          staged = "S",
+          unmerged = "",
+          unstaged = "",
+          untracked = "U",
+        },
+        folder = {
+          default = "",
+          empty = "",
+          empty_open = "",
+          open = "",
+          symlink = "",
+        },
+      },
+    },
+    highlight_git = true,
+    group_empty = false,
+    root_folder_modifier = ":t",
+  },
+  filters = {
+    dotfiles = false,
+    custom = { "node_modules", "\\.cache" },
+    exclude = {},
+  },
+  trash = {
+    cmd = "trash",
+    require_confirm = true,
+  },
+  log = {
+    enable = false,
+    truncate = false,
+    types = {
+      all = false,
+      config = false,
+      copy_paste = false,
+      diagnostics = false,
+      git = false,
+      profile = false,
+    },
+  },
+  actions = {
+    use_system_clipboard = true,
+    change_dir = {
+      enable = true,
+      global = true,
+      restrict_above_cwd = false,
+    },
+    open_file = {
+      quit_on_open = false,
+      resize_window = false,
+      window_picker = {
+        enable = true,
+        chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+        exclude = {
+          filetype = { "notify", "packer", "qf", "diff", "fugitive", "fugitiveblame" },
+          buftype = { "nofile", "terminal", "help" },
         },
       },
     },
   },
 }
-
-vim.g.nvimtree_side = options.view.side
 
 nvimtree.setup(options)
