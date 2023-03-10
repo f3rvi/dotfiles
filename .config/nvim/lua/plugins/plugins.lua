@@ -37,7 +37,15 @@ return require('packer').startup(function(use)
     config = function()
       require('plugins.configs.ui.lualine')
     end,
-    after = "nord.nvim",
+    after = "nvim-tree.lua",
+  }
+
+  use {
+    'nvim-telescope/telescope.nvim',
+    cmd = "Telescope",
+    config = function()
+      require('plugins.configs.ui.telescope')
+    end,
   }
 
   --use {
@@ -113,11 +121,37 @@ return require('packer').startup(function(use)
   }
 
   use {
+    'windwp/nvim-autopairs',
+    after = "nvim-cmp",
+    config = function()
+      require('plugins.configs.completion.autopairs')
+    end,
+  }
+
+  use {
+    'numToStr/Comment.nvim',
+    module = "Comment",
+    keys = { "gc", "gb" },
+    config = function()
+      require('plugins.configs.completion.comment')
+    end,
+  }
+
+  use {
+    'goolord/alpha-nvim',
+    after = "nord.nvim",
+    config = function()
+      require('plugins.configs.ui.alpha')
+    end,
+  }
+
+  use {
     'nvim-tree/nvim-tree.lua',
     tag = 'nightly',
     config = function()
       require('plugins.configs.ui.nvim-tree')
     end,
+    after = "nord.nvim",
   }
 
   if packer_bootstrap then

@@ -18,3 +18,9 @@ map("n", "<A-8>", "<CMD>lua require(\"bufferline\").go_to_buffer(8, true)<CR>", 
 map("n", "<A-9>", "<CMD>lua require(\"bufferline\").go_to_buffer(9, true)<CR>", {})
 map("n", "<A-q>", "<CMD>lua require(\"core.utils\").close_buffer()<CR>", {})
 map("n", "<C-q>", "<CMD>qa!<CR>", {})
+
+-- Comment
+map("v", "<A-/>", "<ESC><CMD>lua require(\"Comment.api\").toggle.linewise(vim.fn.visualmode())<CR>", {})
+
+-- Telescope
+map("n", "<A-Space>", "<CMD>Telescope find_files<CR>", {})

@@ -4,7 +4,6 @@ if not present then
 end
 
 local options = {
-  ignore_ft_on_setup = { "alpha" },
   auto_reload_on_write = false,
   hijack_directories = {
     enable = false,
@@ -24,7 +23,7 @@ local options = {
     args = {},
   },
   git = {
-    enable = true,
+    enable = false,
     ignore = false,
     timeout = 200,
   },
@@ -64,7 +63,7 @@ local options = {
     icons = {
       webdev_colors = true,
       show = {
-        git = true,
+        git = false,
         folder = true,
         file = true,
         folder_arrow = false,
@@ -90,7 +89,7 @@ local options = {
         },
       },
     },
-    highlight_git = true,
+    highlight_git = false,
     group_empty = false,
     root_folder_modifier = ":t",
   },

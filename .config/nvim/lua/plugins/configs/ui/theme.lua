@@ -1,10 +1,10 @@
+vim.g.nord_bold = false
+vim.g.nord_italic = false
+
 local present, nord = pcall(require, 'nord')
 if not present then
   return
 end
-
-vim.g.nord_bold = false
-vim.g.nord_italic = false
 
 nord.set()
 
@@ -58,10 +58,11 @@ vim.cmd [[
 -- Mason
 vim.cmd [[
 
-  hi MasonHeader guibg=#88C0D0 guifg=#2E3440
+  hi MasonHeader guibg=#A3BE8C guifg=#343A46
+  hi MasonNormal guibg=#2A303C
   hi MasonHighlight guifg=#7797B7
-  hi MasonHighlightBlock guifg=#2E3440 guibg=#81A1C1
-  hi MasonHighlightBlockBold guifg=#2E3440 guibg=#81A1C1
+  hi MasonHighlightBlock guifg=#343A46 guibg=#D08770
+  hi MasonHighlightBlockBold guifg=#343A46 guibg=#D08770
   hi MasonHeaderSecondary guifg=#2E3440 guibg=#81A1C1
   hi MasonMuted guifg=#646A76
   hi MasonMutedBlock guifg=#646A76 guibg=#373D49
@@ -103,11 +104,38 @@ vim.cmd [[
 
 ]]
 
+-- Telescope
+vim.cmd [[
+
+  hi TelescopeResultsBorder guibg=#2A303C
+  hi TelescopePromptNormal guifg=#ABB2BF guibg=#343A46
+  hi TelescopePromptBorder guibg=#343A46
+  hi TelescopePromptPrefix guifg=#BF616A
+  hi TelescopeResultsNormal guibg=#2A303C
+  hi TelescopeSelectionCaret guibg=#343A46 guifg=#BF616A
+  hi TelescopeSelection guibg=#343A46
+  hi TelescopeMatching guifg=#88C0D0
+  hi TelescopeResultsTitle guibg=#A3BE8C guifg=#343A46
+  hi TelescopePromptTitle guibg=#D08770 guifg=#343A46
+
+]]
+
+-- Nvim Tree
+vim.cmd [[
+   
+  hi NvimTreeCursorLine guibg=#343A46
+  hi NvimTreeIndentMarker guifg=#565C68
+  hi NvimTreeRootFolder guifg=#D8DEE9 gui=underline
+  hi NvimTreeFolderName guifg=#7797B7
+  hi NvimTreeOpenedFolderName guifg=#7797B7
+
+]]
 
 -- Misc
 vim.cmd [[
-  
-  hi NvimTreeCursorLine guibg=#343A46
+
+  hi AlphaHeader guifg=#565C68
+  hi AlphaButtons guifg=#646A76
   hi DiagnosticSignWarn guifg=#EBCB8B
 
 ]]

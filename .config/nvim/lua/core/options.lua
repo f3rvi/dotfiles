@@ -1,4 +1,5 @@
 local opt = vim.opt
+local api = vim.api
 
 opt.laststatus = 3
 opt.showmode = false
@@ -36,4 +37,5 @@ opt.whichwrap:append "<>[]hl"
 
 vim.cmd[[
 	au VimLeave * set guicursor=a:ver50-blinkon1
+  au FileType alpha set laststatus=0 | au BufUnload <buffer> set laststatus=3
 ]]
