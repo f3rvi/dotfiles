@@ -1,0 +1,24 @@
+[general]
+mode = normal
+framerate = 60
+autosens = 1
+bars = 0
+bar_width = 4
+bar_spacing = 1
+
+[input]
+method = pulse
+source = auto
+
+[output]
+method = ncurses
+style = mono
+alacritty_sync = 1
+
+[color]
+gradient = 1
+gradient_count = 4
+gradient_color_1 = '#8fbcbb'
+gradient_color_2 = '#88c0d0'
+gradient_color_3 = '#81a1c1'
+gradient_color_4 = '#5e81ac'

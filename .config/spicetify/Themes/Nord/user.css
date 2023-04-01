@@ -1,0 +1,541 @@
+/* ////////////////////////////////// Spotify No Premium ///////////////////////////////// */
+
+/* For versions below v1.66 */
+
+/* Context menu upgrade button */
+.upgrade-button, button[data-menu-item="upgrade-account"], .main-contextMenu-menuItem a[href="https://www.spotify.com/premium/"], button[id="upgradeAccount"]
+{
+    display: none !important;
+}
+
+/* Ad placeholder */
+.main-leaderboardComponent-container {
+    display: none !important;
+}
+/* Upgrade button */
+.main-topBar-UpgradeButton {
+    display: none !important;
+}
+
+/* Pointer cursors for accessibility */
+.show-followButton-button,
+.main-dropDown-dropDown,
+.x-toggle-wrapper,
+.main-playlistEditDetailsModal-closeBtn,
+.main-trackList-rowPlayPauseButton,
+.main-rootlist-rootlistItemLink:link,
+.main-rootlist-rootlistItemLink:visited,
+.x-sortBox-sortDropdown,
+.main-contextMenu-menuItemButton,
+.main-trackList-column,
+.main-moreButton-button,
+.x-downloadButton-button,
+.main-playButton-PlayButton,
+.main-coverSlotExpandedCollapseButton-chevron,
+.main-coverSlotCollapsed-chevron,
+.control-button:focus,
+.control-button:hover,
+.main-repeatButton-button,
+.main-skipForwardButton-button,
+.main-playPauseButton-button,
+.main-skipBackButton-button,
+.main-shuffleButton-button,
+.main-addButton-button,
+.progress-bar__slider,
+.main-editImageButton-image {
+    cursor: pointer !important;
+}
+
+/* Home page ad section */
+.desktoproutes-homepage-takeover-ad-hptoComponent-parentContainer {
+    display: none !important;
+}
+
+/* Remove download button */
+.x-downloadButton-DownloadButton {
+    display: none !important;
+}
+
+/* Context menu download button */
+.main-contextMenu-disabled:not([as="a"]) {
+    display: none !important;
+}
+
+/* For update v1.66+ */
+
+/* Upgrade button */
+.PzcmS_Z8j0D6n3ZEmv20[aria-label="Upgrade to Premium"] {
+    display: none !important;
+}
+
+/* Ad placeholder */
+.snMc3rl8H2pM9cqkTpQ6 {
+    display: none !important;
+}
+
+/* Context menu upgrade button */
+.tGu6COgM3S0NqMyh5Jx0 a[href="https://www.spotify.com/premium/"]
+{
+    display: none !important;
+}
+
+/* Download button */
+._GVuKFHd7xr1QUKi_aWH {
+    display: none !important;
+}
+
+/* Context menu download button */
+._qjkLyY1fy0hwCfzDZP7[aria-disabled="true"] {
+    display: none !important;
+}
+
+/* Find more button scale on hover */
+.tJAIYSfsDs3HsXDAPenF:hover {
+    transform: scale(1.06);
+}
+
+/* Pointer cursors for accessibility */
+.OBaPDV8g5lhQbNPmIEwf,
+._S0gp4_8E3h4YCh9EAY9,
+._qjkLyY1fy0hwCfzDZP7,
+.Xo36XRWGIbAh4SIj9FQB,
+.OSNOtcFz_LbegO1zggsb,
+.vBPFl8zuUaCexgJTw8Uc,
+.gro_tSi7cwspepH0as03,
+.vwGw2RO2v__qDU_9c5PE,
+.__1BGhJvHnvqYTPyG074,
+.h1OzWpjBctL_0cZqc4_w,
+.kyn0AY4_gXWvbdivdFgP,
+.kJVSjS2_BaEzRIoxwEhP,
+.mnhCDMSoY7L0E85V51mj,
+.QzuziJ2jGf1gnQA0IAU4,
+.jn05jgnCWyQjLZKqyKFa,
+.YFghzhgfbeZjLqvWpGN3,
+.XP_gp8Z91Ji6qbery2w3,
+._1bg4_fL__odhCd6G_B2,
+.tJAIYSfsDs3HsXDAPenF,
+._xAwo5THLGLKCTj5z4fF,
+.hzuVs5WHF7XZSJtOi_9H,
+.tIriT4RktlpCPFsZWXn2,
+.bC6V9kuel2ZewnjMAtZm,
+.ipxcyIaAWQfeUHO468Os,
+._kySQxSksHLKYgofFfhl,
+.giO6cIQ8auPNZuTvC4Y8 {
+    cursor: pointer !important;
+}
+
+/* Remove homepage ad banner */
+.k6onUQZSeZIsonJ4cSpK {
+    display: none !important;
+}
+
+/* Remove sponsor ads in playlists */
+.sponsor-container {
+    display: none !important;
+}
+
+/* For update 1.1.72 or above */
+
+/* Upgrade button */
+.MgL79SorehxR01FG_x8G[aria-label="Upgrade to Premium"] {
+    display: none !important;
+}
+
+/* Context menu upgrade button */
+.___vortwLX0Vo7zvuAq4[href="https://www.spotify.com/premium/"]
+{
+    display: none !important;
+}
+
+/* Ad placeholder */
+.Aqm75shq2WwHcNTMz2Yq {
+    display: none !important;
+}
+
+/* Download button */
+.q6RbWlHDlbjkbXsca2Yd {
+    display: none !important;
+}
+
+/* Context menu download button */
+.___vortwLX0Vo7zvuAq4[aria-disabled="true"] {
+    display: none !important;
+}
+
+/* Remove top padding above create playlist button */
+.vM_HBZN3SvOzSVabgF4l {
+    margin-top: unset !important;
+}
+
+/* For update 1.1.74+ */
+
+/* Ad placeholder */
+.X871RxPwx9V0MqpQdMom {
+    display: none !important;
+}
+
+/* Upgrade button */
+.Qt5xfSWikz6CLU8Vobxs[aria-label="Upgrade to Premium"] {
+    display: none !important;
+}
+
+/* Context menu upgrade button */
+.DuEPSADpSwCcO880xjUG a[href="https://www.spotify.com/premium/"]
+{
+    display: none !important;
+}
+
+/* Download button */
+.BKsbV2Xl786X9a09XROH {
+    display: none !important;
+    cursor: pointer !important;
+}
+
+/* Context menu download button */
+.wC9sIed7pfp47wZbmU6m[aria-disabled="true"] {
+    display: none !important;
+}
+
+/* Remove top padding above create playlist button */
+.eFQFeXVbY8rrcTagg0oH {
+    margin-top: 0 !important;
+}
+
+button {
+    cursor: pointer !important;
+}
+
+/* Remove upgrade button for v1.1.78 */
+.main-buttons-button[title="Upgrade to Premium"] {
+    display: none !important;
+}
+
+/* Remove sponsored playlist in homepage */
+.WiPggcPDzbwGxoxwLWFf,
+.DHeG1dij5qSIc9nr0wDj,
+.hx2D0g_ursHte5bm62U2 {
+    display: none !important;
+}
+
+/* Remove top padding above create playlist button for 1.1.84+ */
+.LKgm9fCDTO7wqig_5U1q {
+    margin-top: 0 !important;
+}
+
+/* Ad placeholder for 1.1.86+ */
+.ReyA3uE3K7oEz7PTTnAn {
+    display: none !important;
+}
+
+/* ////////////////////////////////////// My Nord Theme //////////////////////////////////// */
+
+/* hides playlist scrollbar */
+.os-scrollbar:nth-child(6) .os-scrollbar-handle {
+    visibility: hidden;
+}
+
+/* Smooth Reveal Playlist Gradient */
+.main-entityHeader-overlay,
+.main-actionBarBackground-background,
+.main-entityHeader-overlay,
+.main-entityHeader-backgroundColor {
+    -webkit-transition: 1s;
+}
+
+/* remove top bar extension round container */
+.main-topBar-historyButtons .main-topBar-button {
+    background-color: unset;
+}
+
+/* change top bar color */
+.main-topBar-background {
+    background-color: unset !important;
+}
+.main-topBar-overlay {
+    background-color: var(--spice-main);
+}
+
+/* remove gradient shadow in sidebar above playlist */
+.Y8edH1Yjo4xrW_58czQj {
+    display: none !important;
+}
+
+/* remove gradient color on home screen */
+.n87ifzfQlmGX8vkeYGDL {
+    display: none !important;
+}
+
+/* change divider color in sidebar */
+.FBPrcmuqo3yv5UfWSRl5 {
+    background-color: var(--spice-nav-active);
+}
+
+/* notification */
+.main-userWidget-notificationIndicator {
+    display: none !important;
+}
+.main-userWidget-box {
+    color: var(--spice-subtext);
+    background-color: transparent !important;
+}
+.main-userWidget-chevron {
+    display: none;
+}
+
+/* change search bar appearance */
+input {
+    background-color: var(--spice-main-secondary) !important;
+    border-radius: 0 !important;
+    padding: 6px 10px 6px 48px;
+    color: var(--spice-text) !important;
+}
+
+/* change scrollbar appearance */
+.os-theme-spotify.os-host-transition > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
+    border-radius: 4px;
+    width: 6px;
+    background-color: var(--spice-button-disabled);
+}
+.os-theme-spotify.os-host-transition > .os-scrollbar-vertical > .os-scrollbar-track {
+    width: 6px;
+}
+
+/* all images */
+.main-image-image {
+    border-radius: 5%;
+}
+
+/* player cover image */
+.cover-art-image {
+    border-radius: 10%;
+}
+
+/* small cover image in playlist row */
+.main-trackList-rowImage {
+    border-radius: 10%;
+}
+
+/* small profile photo on top right */
+.main-avatar-image {
+    border-radius: 50%;
+}
+
+/* Hide playlist gradient down */
+.main-actionBarBackground-background {
+    display: none !important;
+}
+
+/* Hide playlist gradient top */
+.main-entityHeader-backgroundColor {
+    display: none !important;
+}
+
+/* Hide playlist image shadow */
+.main-entityHeader-shadow {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/* local files folder in library */
+.tlNAdRNP5lIeiD85nMcL,
+.main-cardImage-imageWrapper {
+    border-radius: 10px;
+}
+
+/* fix market place buttons */
+#playlist-phrase-submit,
+#marketplace-reload-okay,
+#marketplace-reload-cancel {
+    background-color: var(--spice-main);
+    padding: 10px;
+    border: none;
+    border-radius: 10%;
+}
+
+/* fixed button hover color */
+.encore-dark-theme .encore-bright-accent-set {
+    --background-highlight: var(--spice-button);
+}
+
+/* fixed liked button hover color */
+.main-addButton-active:focus,
+.main-addButton-active:hover {
+    color: var(--spice-button);
+}
+
+/* change playing icon from gif to svg */
+.main-trackList-playingIcon {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg id='playing-icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 24'%3E%3Cdefs%3E%3Cstyle%3E %23playing-icon %7B fill: %2320BC54; %7D @keyframes play %7B 0%25 %7Btransform: scaleY(1);%7D 3.3%25 %7Btransform: scaleY(0.9583);%7D 6.6%25 %7Btransform: scaleY(0.9166);%7D 9.9%25 %7Btransform: scaleY(0.8333);%7D 13.3%25 %7Btransform: scaleY(0.7083);%7D 16.6%25 %7Btransform: scaleY(0.5416);%7D 19.9%25 %7Btransform: scaleY(0.4166);%7D 23.3%25 %7Btransform: scaleY(0.25);%7D 26.6%25 %7Btransform: scaleY(0.1666);%7D 29.9%25 %7Btransform: scaleY(0.125);%7D 33.3%25 %7Btransform: scaleY(0.125);%7D 36.6%25 %7Btransform: scaleY(0.1666);%7D 39.9%25 %7Btransform: scaleY(0.1666);%7D 43.3%25 %7Btransform: scaleY(0.2083);%7D 46.6%25 %7Btransform: scaleY(0.2916);%7D 49.9%25 %7Btransform: scaleY(0.375);%7D 53.3%25 %7Btransform: scaleY(0.5);%7D 56.6%25 %7Btransform: scaleY(0.5833);%7D 59.9%25 %7Btransform: scaleY(0.625);%7D 63.3%25 %7Btransform: scaleY(0.6666);%7D 66.6%25 %7Btransform: scaleY(0.6666);%7D 69.9%25 %7Btransform: scaleY(0.6666);%7D 73.3%25 %7Btransform: scaleY(0.6666);%7D 76.6%25 %7Btransform: scaleY(0.7083);%7D 79.9%25 %7Btransform: scaleY(0.75);%7D 83.3%25 %7Btransform: scaleY(0.8333);%7D 86.6%25 %7Btransform: scaleY(0.875);%7D 89.9%25 %7Btransform: scaleY(0.9166);%7D 93.3%25 %7Btransform: scaleY(0.9583);%7D 96.6%25 %7Btransform: scaleY(1);%7D %7D %23bar1 %7B transform-origin: bottom; animation: play 0.9s -0.51s infinite; %7D %23bar2 %7B transform-origin: bottom; animation: play 0.9s infinite; %7D %23bar3 %7B transform-origin: bottom; animation: play 0.9s -0.15s infinite; %7D %23bar4 %7B transform-origin: bottom; animation: play 0.9s -0.75s infinite; %7D %3C/style%3E%3C/defs%3E%3Ctitle%3Eplaying-icon%3C/title%3E%3Crect id='bar1' class='cls-1' width='4' height='24'/%3E%3Crect id='bar2' class='cls-1' x='6' width='4' height='24'/%3E%3Crect id='bar3' class='cls-1' x='12' width='4' height='24'/%3E%3Crect id='bar4' class='cls-1' x='18' width='4' height='24'/%3E%3C/svg%3E");
+    background: var(--spice-button);
+    content-visibility: hidden;
+    -webkit-mask-repeat: no-repeat;
+}
+
+/* all playlist card view changed, now has a thick border */
+.main-card-card:hover,
+.main-card-card[data-context-menu-open="true"] {
+    background-color: rgba(var(--spice-rgb-main-secondary), 1) !important;
+}
+.main-card-card {
+    background-color: rgba(var(--spice-rgb-main-secondary), 0.5) !important;
+}
+.main-card-card {
+    transition: none;
+}
+
+/* cover art when not collapsed */
+.cover-art.shadow.cover-art--with-auto-height > div > img {
+    border-radius: 4px !important;
+}
+
+/* change playlist top side big image shadow */
+.main-entityHeader-shadow {
+    box-shadow: 0 5px 10px rgba(var(--spice-rgb-shadow), 0.5) !important;
+}
+
+/* change color of 'explicit' badge */
+.main-tag-container {
+    background-color: var(--spice-subtext);
+}
+
+/* change background color of selected row */
+.main-trackList-trackListRow.main-trackList-selected,
+.main-trackList-trackListRow.main-trackList-selected:hover {
+    background-color: rgba(var(--spice-rgb-main-secondary), 0.6) !important;
+}
+.main-trackList-trackListRow:focus-within,
+.main-trackList-trackListRow:hover {
+    background-color: rgba(var(--spice-rgb-main-secondary), 0.4);
+}
+
+/* When song is currently playing */
+.main-trackList-active .main-type-mesto,
+.main-trackList-active .main-trackList-rowSubTitle,
+.main-trackList-active .main-trackList-rowSubTitle a,
+.main-trackList-active .main-trackList-rowMarker,
+.main-trackList-active .main-trackList-rowSectionVariable,
+.main-trackList-active .main-trackList-rowSectionVariable a,
+.main-trackList-active .main-trackList-rowSectionVariable span,
+.main-trackList-active .main-trackList-rowMarker,
+.main-trackList-active .main-trackList-rowDuration {
+    color: var(--spice-button) !important;
+}
+.main-trackList-active .main-tag-container {
+    background-color: var(--spice-button);
+}
+
+/* change appearance of 'playlist' tag  */
+.main-entityHeader-subtitle.main-entityHeader-small.main-entityHeader-uppercase.main-entityHeader-bold {
+    border: 2px var(--spice-text) solid;
+    border-radius: 3px;
+    width: fit-content;
+    display: inline;
+    text-align: center;
+    padding: 3px 7px;
+}
+
+/* change progress bar color (how much filled) */
+.epWhU7hHGktzlO_dop6z {
+    background-color: var(--spice-button) !important;
+}
+
+/* change progress bar color (how much remaining) */
+.w699O0LgQRghXyl3bs9u {
+    background-color: var(--spice-main-secondary) !important;
+}
+
+/* home page most played playlist bg color */
+.Z35BWOA10YGn5uc9YgAp {
+    background-color: rgba(var(--spice-rgb-main-secondary), 0.5) !important;
+}
+.Z35BWOA10YGn5uc9YgAp:focus-within,
+.Z35BWOA10YGn5uc9YgAp:hover,
+.Z35BWOA10YGn5uc9YgAp[data-context-menu-open="true"] {
+    background-color: rgba(var(--spice-rgb-main-secondary), 1) !important;
+}
+
+/* title text area background color for editing playlist details */
+.main-playlistEditDetailsModal-titleInput {
+    background: rgba(var(--spice-rgb-main-secondary), 0.3) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* description text area background color for editing playlist details */
+.main-playlistEditDetailsModal-descriptionTextarea {
+    background: rgba(var(--spice-rgb-main-secondary), 0.3) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* hide card label in editing playlist details */
+.main-playlistEditDetailsModal-textElementLabel {
+    display: none;
+}
+
+/* playlist edit card save button color */
+.ButtonInner-sc-14ud5tc-0.fXheAs.encore-inverted-light-set {
+    --background-base: var(--spice-button);
+    --background-highlight: var(--spice-button);
+    border-radius: 20px !important;
+}
+
+/* make cursors pointer */
+.X1lXSiVj0pzhQCUo_72A,
+.progress-bar__slider {
+    cursor: pointer !important;
+}
+
+/* moves progress bar to top */
+.playback-bar {
+    width: 100%;
+    bottom: 83px;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* hides info about other devices on player */
+.mVVxN9ZfIRjiQfDuzPCZ {
+    display: none;
+}
+
+/* hide and move progress time location right */
+.playback-bar__progress-time-elapsed,
+.npFSJSO1wsu3mEEGb5bh {
+    opacity: 0;
+    position: absolute;
+    bottom: 13px;
+    color: var(--spice-text);
+    background-color: var(--spice-main);
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    text-align: center;
+}
+
+/* moves start time left */
+.playback-bar__progress-time-elapsed {
+    left: 0;
+}
+/* moves end time right */
+.npFSJSO1wsu3mEEGb5bh {
+    right: 0;
+}
+
+/* show time lapse on hover */
+.playback-bar:hover .playback-bar__progress-time-elapsed,
+.playback-bar:hover .npFSJSO1wsu3mEEGb5bh {
+    opacity: 1;
+}
+
+/* change appearance of play-button */
+.main-playPauseButton-button {
+    background-color: inherit;
+    color: var(--spice-text);
+}
+.main-playPauseButton-button svg {
+    height: 19px;
+    width: 19px;
+}
+
+/* artist name color change in playlist (rows) */
+.main-trackList-rowSubTitle a[href] {
+    color: var(--text-subdued, #6a6a6a) !important;
+}

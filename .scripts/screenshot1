@@ -1,0 +1,3 @@
+#!/bin/sh
+grim $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s.png')
+notify-send "Screenshoted!" "Image has been saved" -i $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s.png')

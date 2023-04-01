@@ -1,0 +1,60 @@
+import:
+  - ~/.config/alacritty/theme/nord.yml
+
+window:
+  padding:
+    x: 20
+    y: 15
+
+  dynamic_padding: false
+  decorations: none
+  dynamic_title: false
+
+scrolling:
+  history: 5000
+  multiplier: 3
+
+
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Regular
+
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
+
+  size: 13.0
+
+  offset:
+    x: 0
+    y: 0
+
+  builtin_box_drawing: true
+
+  draw_bold_text_with_bright_colors: false
+
+cursor:
+  style:
+    shape: Beam
+    blinking: On
+
+  vi_mode_style: None
+  blink_interval: 700
+  unfocused_hollow: false
+
+live_config_reload: true
+working_directory: None
+
+mouse:
+  hide_when_typing: true
+
+debug:
+  render_timer: false
+  persistent_logging: false
+  log_level: Warn
+  print_events: false

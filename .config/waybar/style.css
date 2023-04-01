@@ -1,0 +1,135 @@
+* {
+	border: none;
+	border-radius: 15px;
+    	font-family: "JetBrainsMono Nerd Font";
+	font-size: 15px;
+	/*min-height: 10px;*/
+	/*color: #ffffff;*/
+}
+
+#window {
+
+}
+
+window#waybar {
+	background: rgba(0, 0, 0, 0);
+}
+
+#custom-launcher {
+	margin-top: 6px;
+	margin-left: 18px;
+	padding-left: 10px;
+	padding-right: 6px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 15px;
+	transition: none;
+    color: #ECEFF4;
+    background: #81A1C1;
+}
+
+#workspaces {
+	/*font-size: 18px;*/
+	margin-top: 6px;
+	margin-left: 18px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    background: #434C5E;
+}
+
+#workspaces button {
+    background: #434C5E;
+    color: #88C0D0;
+}
+
+#workspaces button.active {
+    color: #EBCB8B;
+    background: #434C5E;
+}
+
+#custom-spotify {
+	font-family: "Work Sans";
+	margin-top: 6px;
+	margin-left: 18px;
+	padding-left: 7px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    background: #8FBCBB;
+    color: #4C566A;
+}
+
+#clock {
+	font-family: "Work Sans";
+	font-weight: Bold;
+	font-size: 20px;
+	margin-top: 6px;
+	padding-left: 26px;
+	padding-right: 29px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    background: #D8DEE9;
+    color: #4C566A;
+}
+
+#custom-powermenu {
+	margin-top: 6px;
+	margin-right: 18px;
+	padding-left: 10px;
+	padding-right: 5px;
+	margin-bottom: 0px;
+  border-radius: 15px;
+	transition: none;
+	color: #2E3440;
+	background: #D08770;
+}
+
+#battery {
+	font-family: "Work Sans";
+	font-weight: 600;
+	margin-top: 6px;
+	margin-right: 18px;
+	padding-left: 14px;
+	padding-right: 12px;
+	margin-bottom: 0px;
+	transition: none;
+	background: #434C5E;
+}
+
+#backlight {
+	font-family: "Work Sans";
+	font-weight: 600;
+	margin-top: 6px;
+	margin-right: 18px;
+	padding-left: 14px;
+	padding-right: 14px;
+	margin-bottom: 0px;
+	transition: none;
+	background: #434C5E;
+}
+
+#pulseaudio {
+	font-family: "Work Sans";
+	font-weight: 600;
+	margin-top: 6px;
+	margin-right: 18px;
+	padding-left: 14px;
+	padding-right: 12px;
+	margin-bottom: 0px;
+	transition: none;
+	background: #434C5E;
+}
+
+#language {
+	font-family: "Work Sans";
+	font-weight: 600;
+	margin-top: 6px;
+	margin-right: 18px;
+	padding-left: 11px;
+	padding-right: 15px;
+	margin-bottom: 0px;
+	transition: none;
+	background: #434C5E;
+}
