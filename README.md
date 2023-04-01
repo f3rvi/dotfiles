@@ -1,2 +1,2 @@
-# Dots in Winter style
-Status: Very, very WIP atm
+# my old neovim configuration
+STATUS: Dead
