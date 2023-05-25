@@ -1,5 +1,7 @@
 #!/bin/sh
-hyprctl keyword animation "fadeOut,0,0,default"; geometry=$(slurp -c 88c0d0ff)
-grim -g "$geometry" $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s.png') 
-notify-send "Screenshoted!" "Image has been saved" -i $(xdg-user-dir PICTURES)/Screenshots/$(ls $(xdg-user-dir PICTURES)/Screenshots -Art | tail -n 1) 
+hyprctl keyword animation "fadeOut,0,0,default"
+if geometry=$(slurp -c 88c0d0ff); then
+  grim -g "$geometry" $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s.png') 
+  notify-send "Screenshoted!" "Image has been saved" -i $(xdg-user-dir PICTURES)/Screenshots/$(ls $(xdg-user-dir PICTURES)/Screenshots -Art | tail -n 1) 
+fi
 hyprctl keyword animation "fadeOut,1,7,default"
