@@ -1,6 +1,6 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher", "wlr/workspaces", "custom/spotify"],
+	"modules-left": ["custom/launcher", "hyprland/workspaces", "custom/spotify"],
 	"modules-center": ["clock"],
 	"modules-right": ["hyprland/language", "pulseaudio", "backlight", "battery", "custom/powermenu"],
 
@@ -10,7 +10,10 @@
 		"on-click-right": "killall rofi"
 	},
 
-	"wlr/workspaces": {
+	"hyprland/workspaces": {
+    		"persistent_workspaces": {
+      		"*": 4
+    	},
 		"format": "{icon}",
 		"on-click": "activate",
 		"format-icons": {
